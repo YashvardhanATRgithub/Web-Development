@@ -1,0 +1,29 @@
+<!DOCTYPE html> <!-- Declares the document type as HTML5. -->
+<html lang="en"> <!-- The root element of the HTML page, language is English. -->
+<head>
+    <!-- The head section contains meta-information about the document. -->
+    <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configures the viewport for responsive design. -->
+    <title>Document</title> <!-- The title displayed in the browser tab. -->
+</head>
+<body>
+    <!-- The body contains the visible content of the page. -->
+    <h1>Forms</h1> <!-- A top-level heading. -->
+    <!-- The <form> tag creates a container for user input. -->
+    <!-- 'action' specifies the URL where form data will be sent. -->
+    <!-- 'method="POST"' sends the form data in the HTTP request body. -->
+    <form action="backend.com/api/joManHo" method="POST">
+        <!-- A label for the name input field. The 'for' attribute should match the 'id' of the input. -->
+        <label for="Name">Name</label>
+        <!-- An input field for text. 'placeholder' is the hint text shown before the user types. -->
+        <!-- Note: This input does not have an 'id' to link with the label above. -->
+        <input type="text" placeholder="Name" />
+        <!-- A button that submits the form data when clicked. -->
+        <button type="submit">Submit</button>
+    </form>
+    <!-- Note: The following label and input are outside the <form> tag and will not be submitted. -->
+    <label for="email">Name</label>
+    <!-- Note: This input is for an email but uses type="text". -->
+    <input type="text" placeholder="email" />
+</body>
+</html>

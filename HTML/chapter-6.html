@@ -1,0 +1,36 @@
+<!DOCTYPE html> <!-- Declares the document type to be HTML5 -->
+<html lang="en"> <!-- The root element of an HTML page, with the language set to English -->
+<head>
+    <!-- The head section contains meta-information about the document -->
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the HTML document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the webpage look good on all devices (responsive design) -->
+    <title>Document</title> <!-- The title of the document, shown in the browser's title bar or tab -->
+</head>
+<body>
+    <!-- The body section contains the visible content of the HTML document -->
+    <h1>Tables</h1> <!-- A top-level heading -->
+    
+    <!-- The <table> tag creates a table. The border="1" attribute adds a border, though using CSS for styling is the modern approach. -->
+    <table border="1">
+        <!-- The <caption> tag provides a title or caption for the table. -->
+        <caption>
+            Tea production by country
+        </caption>
+        <!-- The <tr> tag defines a row in a table. This is the header row. -->
+        <tr>
+            <!-- The <th> tag defines a header cell in a table. -->
+            <th>Tea Name</th>
+            <!-- The colspan attribute makes a cell span across multiple columns. This header spans 2 columns. -->
+            <th colspan="2">Type</th> 
+            <th>Origin</th>
+        </tr>
+        <!-- This is the second row, containing data. -->
+        <tr>
+            <!-- The <td> tag defines a standard data cell in a table. -->
+            <td>Sencha</td>
+            <td>Green</td>
+            <td>Japan</td>
+        </tr>
+    </table>
+</body>
+</html>
