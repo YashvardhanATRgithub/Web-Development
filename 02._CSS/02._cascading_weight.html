@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- This style block contains internal CSS rules for this HTML document. -->
+    <style>
+        /* This is a type selector. It applies to all <button> elements. */
+        /* It has the lowest specificity among the selectors used here. */
+        button {
+            color: black;
+        }
+        /* This is an ID selector. It targets the element with id="btn-1". */
+        /* ID selectors have a higher specificity than type selectors. */
+        /* below id will cascade above tag property */
+        #btn-1 {
+            color:aqua
+        }
+        /* This is the same ID selector defined again. */
+        /* When selectors have the same specificity, the last one defined wins. */
+        /* below id will cascade above id */
+        #btn-1 {
+            color:darkblue
+        }
+        /* This is a class selector. It targets elements with class="class". */
+        /* ID selectors have a higher specificity than class selectors. */
+        /* below class will not cascade above id because of specifity algorithm that is cascading weight */
+        .class {
+            color:brown
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <!-- The final color of this button is determined by CSS specificity rules. -->
+    <!-- Inline styles have the highest specificity, overriding any internal or external stylesheets. -->
+    <!-- because of specifity algorithm, inline css cascades all other styling like id or class -->
+    <button id="btn-1" class="btn" style="color:orange;">Click Me</button>
+
+    <button id="external-btn">External CSS</button>
+</body>
+</html>

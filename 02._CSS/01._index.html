@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+    <!-- Adding internal css -->
+     <style>
+
+        /* selector 1: button */
+        button {
+            border: none;
+            color: black;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        /* cascading button properties by overridding it */
+        button {
+            color: blue ;
+        }
+
+        /* selector 2: paragraph */
+        p {
+            background-color: aqua;
+            font-size: 30px;
+            padding: 20px;
+            border-radius: 30px;
+        }
+
+        /* inorder to style classes, we use dot(.) before class name */
+        .my-class-a {
+            color: red;
+            text-decoration: underline;
+        }
+
+        /* Inorder to style id, we use the syntax below */
+        #btn-1 {
+            color: pink;
+        }
+     </style>
+
+</head>
+<body>
+
+    <p>This is a CSS Class.</p>
+
+
+
+    <!-- Buttons -->
+    <button id="btn-1" class = "my-class-a">Click Me</button>
+    <button>Click Me</button>
+
+    <!-- Overriding internal css by inline css by changing colour -->
+    <button class = "my-class-a" style="background-color: red; color: green;" >Click Me</button>
+
+
+
+    <h1 class = "my-class-a">Heading</h1>
+
+    
+</body>
+</html>

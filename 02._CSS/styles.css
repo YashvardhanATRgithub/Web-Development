@@ -1,0 +1,14 @@
+#external-btn {
+        border-color: blue;
+        border-width: 10px;
+        padding: 30px;
+        margin-left: 30px;
+}
+
+.element-type-inline {
+        display:block
+}
+
+.element-type-block {
+        display: inline;
+}
