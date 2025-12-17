@@ -11,8 +11,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .parent {
+            border: 2px solid;
+            display: grid;
+
+            /* Grid templates are used to define total number of rows and columns in the grid */
+
+            /* grid-template-rows: 100px 100px 100px 100px;
+            grid-template-columns: 100px 100px 100px 100px; */
+
+            /* Instead of writing each pixel for each rows or columns we can use repeat(#rows/col required, pixel) */
+            grid-template-rows: repeat(4, 100px);
+            grid-template-columns: repeat(4, 100px);
+
+            /* grid-gap is used to give gap between grids */
+            grid-gap: 10px;
+        }
+        .child {
+            border: 1px dashed;
+        }
+        .item-1 {
+            /* grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            /* grid-column-end: 4;     -----> can also use spam here: grid-span: 4; */   
+
+            /* instead of writing this much we can do it in 2 lines */
+
+            /* grid-row: 1 / 3;
+            grid-column: 1 / 4; */
+
+            /* We can write all above properties in one line as well */
+            /* Syntax: grid-area: row-start / col-start / row-end / col-end */
+
+            grid-area: 1 / 1 / 3 / 4;
+
+        }
+        .item-5 {
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+        .item-4 {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+    </style>
 </head>
 <body>
-    <h1> Hello World </h1>
+    <div class="parent">
+        <div class="child item-1">Item 1</div>
+        <div class="child">Item 2</div>
+        <div class="child">Item 3</div>
+        <div class="child item-4">Item 4</div>
+        <div class="child item-5">Item 5</div>
+        
+    </div>
 </body>
 </html>
