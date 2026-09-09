@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+</head>
+<body>
+    <h1>Todo App</h1>
+    <!-- A div for whole page-->
+    <div>
+        <!-- A div for user input -->
+        <div>
+            <input id="todo-input" placeholder="Enter your todo" />
+            <button id="add-btn">Add</button>
+        </div>
+
+        <!-- A div for deleting the user todo -->
+         <div>
+            <ul id="todo-items-container">
+                <!-- Hardcoded as of now-->
+                <li> Go to gym <button>X</button></li>
+                <li>Eat <button>X</button></li>
+                <li>Code <button>X</button></li>
+
+                <!-- We have few problems to solve 
+                 1) We have to take input from the user 
+                 2) We have to listen on Add button whether user has added something or not
+                 3)Whatever user has entered, we have to make li of that and render it on the screen
+                 -->
+                 
+            </ul>
+         </div>
+
+    </div>
+    <script src="02._script.js"></script>
+</body>
+</html>
